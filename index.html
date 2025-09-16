@@ -7,76 +7,137 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f3f4f6;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      background-color: #f9fafb;
+      color: #333;
     }
 
     header {
-      background-color: #004AAD;
+      background-color: #1e3a8a; /* bleu foncé */
       color: white;
-      padding: 2rem 1rem;
+      text-align: center;
+      padding: 3rem 1rem;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      margin: 0 0 1rem;
     }
 
-    main {
-      padding: 2rem 1rem;
-    }
-
-    p {
+    header p {
       font-size: 1.1rem;
-      max-width: 600px;
-      margin: 1rem auto 2rem;
-      color: #333;
+      margin: 0.5rem 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    ul li::before {
+      content: "✔️ ";
+      color: #16a34a; /* vert */
+    }
+
+    .steps li::before {
+      content: "➡️ ";
+      color: #1e3a8a;
     }
 
     .btn {
       display: inline-block;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
-      background-color: #004AAD;
+      background-color: #16a34a; /* vert vif */
       color: white;
+      padding: 1rem 2rem;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+      font-weight: bold;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
       transition: background-color 0.2s;
     }
 
     .btn:hover {
-      background-color: #00327d;
-    }
-
-    .btn.secondary {
-      background-color: #444;
+      background-color: #15803d;
     }
 
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
+      text-align: center;
+      font-size: 0.85rem;
       color: #777;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Coach Mobilité Professionnelle</h1>
+    <h1>Préparez votre projet d’immigration comme un·e pro !</h1>
+    <p>Avec notre coach virtuel, entraînez-vous à répondre aux questions sur votre projet et obtenez des conseils personnalisés.</p>
+    <p>🌍 Entièrement gratuit • 🎤 Mode audio recommandé • ⚡ Résultats immédiats</p>
   </header>
 
-  <main>
-    <p>Un agent intelligent pour vous aider à préparer efficacement votre projet d’immigration professionnelle et vos entretiens dans un pays francophone.</p>
+  <section>
+    <h2>🎯 À quoi sert cet outil ?</h2>
+    <p>Le Coach Mobilité Professionnelle vous aide à :</p>
+    <ul>
+      <li>Clarifier votre projet d’immigration</li>
+      <li>Répondre aux questions que posent réellement les recruteurs</li>
+      <li>Améliorer votre confiance et votre préparation</li>
+    </ul>
+  </section>
 
-    <a class="btn" href="https://chatgpt.com/g/g-68c9b5630b8881919e8ff190eda9ad83-coach-mobilite-professionnelle" target="_blank">Accéder à l’agent</a>
-    <a class="btn secondary" href="https://moovejob.com" target="_blank">Découvrir Moovejob</a>
-  </main>
+  <section>
+    <h2>⚙️ Comment ça fonctionne ?</h2>
+    <ol class="steps">
+      <li>Répondez aux questions de mise en contexte (pays, projet, motivation)</li>
+      <li>Passez une simulation d’entrevue réaliste sur votre projet d’immigration</li>
+      <li>Recevez un feedback clair et honnête pour progresser</li>
+      <li>Optimisez vos chances de succès à l’international</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>💡 Pourquoi l’utiliser ?</h2>
+    <ul>
+      <li>Gagnez en confiance avant vos vraies entrevues</li>
+      <li>Apprenez à structurer vos réponses efficacement</li>
+      <li>Identifiez vos points forts et vos points à améliorer</li>
+    </ul>
+
+    <a class="btn" href="https://chatgpt.com/g/g-68c9b5630b8881919e8ff190eda9ad83-coach-mobilite-professionnelle" target="_blank">🚀 Lancer le coach</a>
+  </section>
 
   <footer>
-    Créé avec ❤️ pour les talents en mobilité internationale.
+    © 2025 | Développé par <a href="https://moovejob.com" target="_blank">Moovejob</a> pour accompagner les talents en mobilité internationale.
   </footer>
 
 </body>
